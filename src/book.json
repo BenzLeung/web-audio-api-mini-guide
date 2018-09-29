@@ -7,11 +7,15 @@
     "-lunr",
     "-search",
     "search-plus",
-    "github"
+    "github",
+    "3-ba"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/BenzLeung"
+    },
+    "3-ba": {
+      "token": "08e7568514d4ec603eb05778e56aef48"
     }
   }
 }
