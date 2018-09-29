@@ -1,0 +1,17 @@
+{
+  "title" : "Web Audio API 小教程",
+  "author": "BenzLeung",
+  "description": "Web Audio API 入门教程",
+  "language": "zh-hans",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus",
+    "github"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/BenzLeung"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "web-audio-api-mini-guide-github",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gitbook serve",
+    "install": "cd ./src && gitbook install",
+    "build": "gitbook build ./src ./docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-search-plus": "^1.0.3"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

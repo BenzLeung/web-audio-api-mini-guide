@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2-3. 总结 · Web Audio API 小教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="BenzLeung">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter3.html" />
+    
+    
+    <link rel="prev" href="chapter2-2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    关于本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1. 它能做什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2. 开始发出声音
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter2-1.html">
+            
+                <a href="chapter2-1.html">
+            
+                    
+                    2-1. 播放声音的基本步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2-2.html">
+            
+                <a href="chapter2-2.html">
+            
+                    
+                    2-2. AudioNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="chapter2-3.html">
+            
+                <a href="chapter2-3.html">
+            
+                    
+                    2-3. 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3. 基本控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter3-1.html">
+            
+                <a href="chapter3-1.html">
+            
+                    
+                    3-1. AudioNode 回顾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter3-2.html">
+            
+                <a href="chapter3-2.html">
+            
+                    
+                    3-2. 常用的 AudioNode 详解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="chapter3-2-1.html">
+            
+                <a href="chapter3-2-1.html">
+            
+                    
+                    3-2-1. SourceNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="chapter3-2-2.html">
+            
+                <a href="chapter3-2-2.html">
+            
+                    
+                    3-2-2. GainNode 音量调节器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="chapter3-2-3.html">
+            
+                <a href="chapter3-2-3.html">
+            
+                    
+                    3-2-3. AudioParam 数值调节器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="chapter3-2-4.html">
+            
+                <a href="chapter3-2-4.html">
+            
+                    
+                    3-2-4. DynamicsCompressorNode 动态压缩器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chapter3-3.html">
+            
+                <a href="chapter3-3.html">
+            
+                    
+                    3-3. 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4. 一些声音常识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter4-1.html">
+            
+                <a href="chapter4-1.html">
+            
+                    
+                    4-1. 音乐理论常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="chapter4-2.html">
+            
+                <a href="chapter4-2.html">
+            
+                    
+                    4-2. 声音物理学常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="chapter4-3.html">
+            
+                <a href="chapter4-3.html">
+            
+                    
+                    4-3. 声音的数字化常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="chapter4-4.html">
+            
+                <a href="chapter4-4.html">
+            
+                    
+                    4-4. 常见的音频格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="chapter4-5.html">
+            
+                <a href="chapter4-5.html">
+            
+                    
+                    4-5. 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5. 进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chapter5-1.html">
+            
+                <a href="chapter5-1.html">
+            
+                    
+                    5-1. DynamicsCompressor - 动态混音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="chapter5-2.html">
+            
+                <a href="chapter5-2.html">
+            
+                    
+                    5-2. Panner - 3D立体环绕音效
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter5-3.html">
+            
+                <a href="chapter5-3.html">
+            
+                    
+                    5-3. BiquadFilter - 滤波器、均衡器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="chapter5-4.html">
+            
+                <a href="chapter5-4.html">
+            
+                    
+                    5-4. Analyser - 频谱分析器（频谱图、时域图）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="chapter5-5.html">
+            
+                <a href="chapter5-5.html">
+            
+                    
+                    5-5. Convolver - 卷积运算处理（环境混响音效）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="chapter5-6.html">
+            
+                <a href="chapter5-6.html">
+            
+                    
+                    5-6. Oscillator - 振荡器（声波生成器）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="chapter5-7.html">
+            
+                <a href="chapter5-7.html">
+            
+                    
+                    5-7. 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    完结了。
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2-3. 总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2-3-&#x603B;&#x7ED3;">2-3. &#x603B;&#x7ED3;</h1>
+<ul>
+<li>&#x64AD;&#x653E;&#x58F0;&#x97F3;&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;&#xFF1A;<ol>
+<li>&#x521D;&#x59CB;&#x5316; <code>AudioContext</code> &#x5BF9;&#x8C61;</li>
+<li>&#x4F7F;&#x7528; <code>XMLHTTPRequest</code> &#x5BF9;&#x8C61;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;mp3</li>
+<li>&#x628A;mp3&#x6570;&#x636E;&#x7528; <code>ctx.decodeAudioData</code> &#x8F6C;&#x6362;&#x6210;wav&#x683C;&#x5F0F;&#x7684; <code>buffer</code></li>
+<li>&#x4F7F;&#x7528; <code>SourceNode</code> &#x5BF9;&#x8C61;&#xFF08;&#x4E0B;&#x6587;&#x5C06;&#x8BE6;&#x89E3;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF09;&#x628A; <code>buffer</code> &#x88C5;&#x8D77;&#x6765;</li>
+<li>&#x8BA9; <code>SourceNode</code> &#x8FDE;&#x63A5;&#x5230;&#x97F3;&#x9891;&#x8F93;&#x51FA;&#x53E3; <code>destination</code></li>
+<li>&#x6267;&#x884C; <code>.start(0)</code> &#x89E6;&#x53D1; <code>SourceNode</code> &#x5F00;&#x59CB;&#x64AD;&#x653E;&#x58F0;&#x97F3;</li>
+</ol>
+</li>
+<li>AudioNode &#x662F; Web Audio Api &#x7684;&#x57FA;&#x672C;&#x7C7B;&#xFF0C;&#x7531;&#x5B83;&#x6D3E;&#x751F;&#x7684;&#x7C7B;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x97F3;&#x9891;&#x3002;</li>
+<li>AudioNode &#x6D3E;&#x751F;&#x7684;&#x7C7B;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;3&#x79CD;&#xFF1A;<ol>
+<li>&#x4F5C;&#x4E3A;<strong>&#x3010;&#x58F0;&#x97F3;&#x6E90;&#x5934;&#x3011;</strong>&#x7684; AudioNode&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6216;&#x751F;&#x6210;&#x58F0;&#x97F3;&#x3002;</li>
+<li>&#x4F5C;&#x4E3A;<strong>&#x3010;&#x8FC7;&#x6EE4;&#x5668;&#x3011;</strong>&#x7684; AudioNode&#xFF0C;&#x4F1A;&#x5BF9;&#x8F93;&#x5165;&#xFF08;In&#xFF09;&#x7684;&#x58F0;&#x97F3;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4E4B;&#x540E;&#x518D;&#x8F93;&#x51FA;&#xFF08;Out&#xFF09;&#x3002;</li>
+<li><strong>&#x3010;destination&#x3011;</strong> &#x662F;&#x7279;&#x6B8A;&#x7684; AudioNode&#xFF0C;&#x5B83;&#x6536;&#x5230;&#x58F0;&#x97F3;&#x4E4B;&#x540E;&#x4F1A;&#x76F4;&#x63A5;&#x4F20;&#x5230;&#x8033;&#x673A;&#x6216;&#x626C;&#x58F0;&#x5668;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x542C;&#x5230;&#x58F0;&#x97F3;&#x3002;</li>
+</ol>
+</li>
+<li>&#x591A;&#x4E2A; AudioNode &#x7528; <code>.connect()</code> &#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x53EF;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x58F0;&#x97F3;&#x3002;</li>
+</ul>
+<p><img src="assets/chapter2/7.png" alt="&#x591A;&#x4E2A; AudioNode &#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x53EF;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x58F0;&#x97F3;" title="&#x591A;&#x4E2A; AudioNode &#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x53EF;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x58F0;&#x97F3;"></p>
+<h2 id="&#x63A5;&#x4E0B;&#x6765;">&#x63A5;&#x4E0B;&#x6765;...</h2>
+<p>&#x4E0B;&#x4E00;&#x8282;&#x300A;&#x57FA;&#x672C;&#x63A7;&#x5236;&#x300B;&#xFF0C;&#x5C06;&#x5BF9; SourceNode &#x505A;&#x66F4;&#x591A;&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x4F8B;&#x5982;&#x4E2D;&#x9014;&#x505C;&#x6B62;&#x3001;&#x5FAA;&#x73AF;&#x64AD;&#x653E;&#x3001;&#x8C03;&#x8282;&#x97F3;&#x91CF;&#xFF0C;&#x5E76;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x591A;&#x4E2A; SourceNode &#x540C;&#x65F6;&#x64AD;&#x653E;&#x3002;</p>
+<h2 id="&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;">&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;</h2>
+<p>&#x5982;&#x679C;&#x89C9;&#x5F97; Web Audio API &#x5199;&#x8D77;&#x6765;&#x4EE3;&#x7801;&#x91CF;&#x592A;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x6211;&#x5DF2;&#x7ECF;&#x5C01;&#x88C5;&#x597D;&#x7684; Javascript &#x5E93; &#x2014;&#x2014; <strong>Benz Audio Engine</strong>&#x3002;</p>
+<p>&#x9879;&#x76EE; Github&#xFF1A;<a href="https://github.com/BenzLeung/benz-audio-engine" target="_blank">https://github.com/BenzLeung/benz-audio-engine</a></p>
+<p><strong>Benz Audio Engine</strong> &#x53EA;&#x628A; Web Audio API &#x5E38;&#x7528;&#x529F;&#x80FD;&#x505A;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x5B9E;&#x73B0;&#x97F3;&#x6548;&#x7684;&#x52A0;&#x8F7D;&#x3001;&#x64AD;&#x653E;&#x3001;&#x6682;&#x505C;&#x3001;&#x97F3;&#x91CF;&#x8C03;&#x8282;&#x3002;&#x7B80;&#x5355;&#x3001;&#x5E72;&#x51C0;&#xFF0C;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x732E;">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+<ul>
+<li>Web Audio API &#x7B80;&#x6613;&#x5165;&#x95E8;&#x6559;&#x7A0B;&#xFF0C;<a href="http://newhtml.net/web-audio-api%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" target="_blank">http://newhtml.net/web-audio-api%E7%AE%80%E6%98%93%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</a></li>
+<li>W3C Editor&#x2019;s Draft&#xFF0C;<a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html" target="_blank">https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter2-2.html" class="navigation navigation-prev " aria-label="Previous page: 2-2. AudioNode">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter3.html" class="navigation navigation-next " aria-label="Next page: 3. 基本控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2-3. 总结","level":"1.3.3","depth":2,"next":{"title":"3. 基本控制","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[{"title":"3-1. AudioNode 回顾","level":"1.4.1","depth":2,"path":"chapter3-1.md","ref":"chapter3-1.md","articles":[]},{"title":"3-2. 常用的 AudioNode 详解","level":"1.4.2","depth":2,"path":"chapter3-2.md","ref":"chapter3-2.md","articles":[{"title":"3-2-1. SourceNode","level":"1.4.2.1","depth":3,"path":"chapter3-2-1.md","ref":"chapter3-2-1.md","articles":[]},{"title":"3-2-2. GainNode 音量调节器","level":"1.4.2.2","depth":3,"path":"chapter3-2-2.md","ref":"chapter3-2-2.md","articles":[]},{"title":"3-2-3. AudioParam 数值调节器","level":"1.4.2.3","depth":3,"path":"chapter3-2-3.md","ref":"chapter3-2-3.md","articles":[]},{"title":"3-2-4. DynamicsCompressorNode 动态压缩器","level":"1.4.2.4","depth":3,"path":"chapter3-2-4.md","ref":"chapter3-2-4.md","articles":[]}]},{"title":"3-3. 总结","level":"1.4.3","depth":2,"path":"chapter3-3.md","ref":"chapter3-3.md","articles":[]}]},"previous":{"title":"2-2. AudioNode","level":"1.3.2","depth":2,"path":"chapter2-2.md","ref":"chapter2-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/BenzLeung"},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"BenzLeung","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Audio API 小教程","language":"zh-hans","gitbook":"*","description":"Web Audio API 入门教程"},"file":{"path":"chapter2-3.md","mtime":"2018-09-25T07:16:36.656Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-29T08:04:10.178Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
